@@ -6,8 +6,12 @@
 
     <title>Cafe Coffee</title>
 
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet">
+
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <style>
 
@@ -64,19 +68,17 @@ rgba(20,15,5,0.75)
         }
 
         .btn-menu:hover{
-            background: #16a34a;
-            .btn{
+    background: #16a34a;
+}
 
+.btn{
     transition:0.3s;
 }
 
 .btn:hover{
-
     transform:translateY(-5px);
-
     box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
-        }
 
     </style>
 </head>
