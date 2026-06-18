@@ -35,7 +35,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 rgba(20,15,5,0.75),
 rgba(20,15,5,0.75)
 ),
-            url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');
+           background:#140f05;
 
             background-size: cover;
             background-position: center;
