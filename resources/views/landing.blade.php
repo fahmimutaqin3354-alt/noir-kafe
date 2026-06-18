@@ -90,7 +90,7 @@ rgba(20,15,5,0.75)
 
         <div class="mb-4">
 
-    <img src="{{ asset('images/logo.jpg') }}"
+    <!-- logo dihapus sementara -->
          style="
             width:120px;
             height:120px;
