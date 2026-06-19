@@ -591,7 +591,7 @@ border-radius:20px;
          ">
 
     <h1 class="display-4 fw-bold m-0">
-       noir Coffee
+       Noir Coffee
     </h1>
 
 </div>
