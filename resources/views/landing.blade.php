@@ -28,24 +28,58 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
             color: white;
         }
 
-        .hero{
-            height: 100vh;
-            background:
-            linear-gradient(
-rgba(20,15,5,0.75),
-rgba(20,15,5,0.75)
-),
-          url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');
+        .hero-video{
 
-            background-size: cover;
-            background-position: center;
+    position:relative;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            text-shadow:0 5px 20px rgba(0,0,0,0.5);
-        }
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+}
+
+.bg-video{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.video-overlay{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(20,15,5,0.65);
+
+    z-index:1;
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
 
         .hero h1{
             font-size: 70px;
@@ -84,9 +118,21 @@ rgba(20,15,5,0.75)
 </head>
 <body>
 
-<section class="hero">
+<section class="hero-video">
 
-    <div>
+    <!-- VIDEO -->
+    <video autoplay muted loop playsinline class="bg-video">
+
+        <source src="{{ asset('videos/coffee.mp4') }}"
+                type="video/mp4">
+
+    </video>
+
+    <!-- OVERLAY -->
+    <div class="video-overlay"></div>
+
+    <!-- CONTENT -->
+    <div class="hero-content">
 
         <div class="mb-4">
 
